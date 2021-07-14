@@ -28,12 +28,15 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
@@ -91,7 +94,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.scss"
@@ -127,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "push-notification-service-workers"
+  "defaultProject": "push-notification-service-workers",
+  "cli": {
+    "analytics": "0b8f6f01-70d1-4ec8-9596-75bc68aab534"
+  }
 }
